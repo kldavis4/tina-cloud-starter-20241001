@@ -5,7 +5,7 @@ import { iconSchema } from "../fields/icon";
 const Global: Collection = {
   label: "Global",
   name: "global",
-  path: "content/global",
+  path: "src/content/global",
   format: "json",
   ui: {
     global: true,

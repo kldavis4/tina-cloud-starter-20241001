@@ -19,9 +19,13 @@ const config = defineConfig({
     //   return pack.TinaCloudCloudinaryMediaStore;
     // },
     // this is the config for the tina cloud media store
-    tina: {
-      publicFolder: "public",
-      mediaRoot: "uploads",
+    // tina: {
+    //   publicFolder: "public",
+    //   mediaRoot: "uploads",
+    // },
+    loadCustomStore: async () => {
+      const pack = await import('next-tinacms-s3')
+      return pack.TinaCloudS3MediaStore
     },
   },
   build: {

@@ -3,7 +3,7 @@ import type { Collection } from "tinacms";
 const Post: Collection = {
   label: "Blog Posts",
   name: "post",
-  path: "content/posts",
+  path: "src/content/posts",
   format: "mdx",
   ui: {
     router: ({ document }) => {                  
