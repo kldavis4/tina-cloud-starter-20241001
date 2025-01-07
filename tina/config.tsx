@@ -31,24 +31,24 @@ const config = defineConfig({
   schema: {
     collections: [Page, Post, Author, Global],
   },
-  //  tinaioConfig: {
-  //   //frontendUrlOverride: 'https://pr1993-app.tinajs.dev', // 'https://app.tina.io'
-  //   //identityApiUrlOverride: 'https://pr1993-identity.tinajs.dev',
-  //   //contentApiUrlOverride: 'https://pr1993-content.tinajs.dev',
-  //   //assetsApiUrlOverride: 'https://assets.tinajs.io',
-  //   //frontendUrlOverride: 'https://app.tina.io', // 'https://app.tina.io'
-  //   //identityApiUrlOverride: 'https://identity.tinajs.io',
-  //   //contentApiUrlOverride: 'https://content.tinajs.io',
-  //   //assetsApiUrlOverride: 'https://assets.tinajs.dev',
-  //   //frontendUrlOverride: 'https://app.tinajs.dev', // 'https://app.tina.io'
-  //   //identityApiUrlOverride: 'https://identity.tinajs.dev',
-  //   //contentApiUrlOverride: 'https://content.tinajs.dev'
-  //   frontendUrlOverride: 'http://localhost:3002', // 'https://app.tina.io'
-  //   identityApiUrlOverride: 'https://kldavis4-identity.tinajs.dev',
-  //   contentApiUrlOverride: 'https://kldavis4-content.tinajs.dev',
-  //   //assetsApiUrlOverride: 'https://kldavis4-assets.tinajs.dev'
-  //   //assetsApiUrlOverride: 'https://assets-api-local-kldavis4.tinajs.dev'
-  // },
+   tinaioConfig: {
+    //frontendUrlOverride: 'https://pr1993-app.tinajs.dev', // 'https://app.tina.io'
+    //identityApiUrlOverride: 'https://pr1993-identity.tinajs.dev',
+    //contentApiUrlOverride: 'https://pr1993-content.tinajs.dev',
+    //assetsApiUrlOverride: 'https://assets.tinajs.io',
+    //frontendUrlOverride: 'https://app.tina.io', // 'https://app.tina.io'
+    //identityApiUrlOverride: 'https://identity.tinajs.io',
+    //contentApiUrlOverride: 'https://content.tinajs.io',
+    //assetsApiUrlOverride: 'https://assets.tinajs.dev',
+    //frontendUrlOverride: 'https://app.tinajs.dev', // 'https://app.tina.io'
+    //identityApiUrlOverride: 'https://identity.tinajs.dev',
+    //contentApiUrlOverride: 'https://content.tinajs.dev'
+    frontendUrlOverride: 'http://localhost:3002', // 'https://app.tina.io'
+    identityApiUrlOverride: 'https://kldavis4-identity.tinajs.dev',
+    contentApiUrlOverride: 'https://kldavis4-content.tinajs.dev',
+    //assetsApiUrlOverride: 'https://kldavis4-assets.tinajs.dev'
+    //assetsApiUrlOverride: 'https://assets-api-local-kldavis4.tinajs.dev'
+  },
 });
 
 export default config;
