@@ -10,6 +10,12 @@ export default async function PostPage({
 }) {
   const data = await client.queries.post({
     relativePath: `${params.filename.join("/")}.mdx`,
+  }, {
+    fetchOptions: {
+      next: {
+        tags: [`post/${params.filename.join("/")}.mdx`],
+      },
+    }
   });
 
   return (
