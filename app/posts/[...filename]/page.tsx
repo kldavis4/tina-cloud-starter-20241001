@@ -13,6 +13,7 @@ export default async function PostPage({
   }, {
     fetchOptions: {
       next: {
+        revalidate: 60,
         tags: [`content/post/${params.filename.join("/")}.md`],
       },
     }
