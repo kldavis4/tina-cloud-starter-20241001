@@ -4,7 +4,6 @@ import { revalidateTag } from 'next/cache';
 export async function POST(req: NextRequest) {
     try {
         const body = await req.json();
-        console.log('Received request body:', body);
         const path = body.path;
 
         if (!path) {
@@ -14,7 +13,7 @@ export async function POST(req: NextRequest) {
         // Call revalidateTag with the path value
         revalidateTag(path);
 
-        return NextResponse.json({ message: `Revalidation triggered for path: ${path}` });
+        return NextResponse.json({ message: `revalidation triggered for path: ${path}`, payload: body });
     } catch (error) {
         console.error('Error processing request:', error);
         return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
