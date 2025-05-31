@@ -19,7 +19,6 @@ The content is managed through Markdown and JSON files stored in your GitHub rep
 
 ## Local Development
 
-
 Install the project's dependencies:
 
 > [!NOTE]  
